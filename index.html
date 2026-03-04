@@ -1,1 +1,263 @@
-test project rahman
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISPY | Premium Visual Intelligence & Design</title>
+    <meta name="google-site-verification" content="t65x6fh26Gwe32U4TP3cWtwl_Marfaj5JpQ9LA9rFDk" />
+    <meta name="description" content="Vispy.gleeze.com menyediakan solusi visual premium, desain strategis, dan teknologi kreatif untuk merek global yang menginginkan eksklusivitas.">
+    <meta name="keywords" content="vispy, vispy gleeze, visual agency, premium design studio, luxury branding, visual intelligence">
+    <meta name="author" content="VISPY Digital">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="canonical" href="https://vispy.gleeze.com/" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-obsidian: #050505;
+            --accent-emerald: #00ff88; /* Hijau Zamrud Neon */
+            --silver: #e2e8f0;
+            --glass: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-obsidian);
+            color: var(--silver);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* NAVIGATION BAR */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 30px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(5, 5, 5, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--glass-border);
+            z-index: 1000;
+        }
+
+        /* FONT-ONLY LOGO: VISPY */
+        .logo {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-text {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 800;
+            letter-spacing: -1px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .logo-dot {
+            color: var(--accent-emerald);
+            font-size: 2rem;
+            line-height: 0;
+            margin-left: 2px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--silver);
+            text-decoration: none;
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            opacity: 0.6;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            opacity: 1;
+            color: var(--accent-emerald);
+        }
+
+        /* HERO SECTION */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 10%;
+            background: radial-gradient(circle at 50% 50%, #0a1f16 0%, var(--bg-obsidian) 70%);
+        }
+
+        .hero-tag {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: var(--accent-emerald);
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .hero h1 {
+            font-family: 'Syne', sans-serif;
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 800;
+            line-height: 0.9;
+            margin-bottom: 30px;
+            background: linear-gradient(to bottom, #fff 40%, #555);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            max-width: 500px;
+            color: #888;
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+        }
+
+        .btn-luxe {
+            padding: 18px 45px;
+            background: transparent;
+            color: #fff;
+            border: 1px solid var(--accent-emerald);
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: all 0.4s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-luxe:hover {
+            background: var(--accent-emerald);
+            color: #000;
+            box-shadow: 0 0 30px rgba(0, 255, 136, 0.4);
+        }
+
+        /* FOOTER */
+        footer {
+            padding: 100px 6% 40px;
+            background: #000;
+            border-top: 1px solid var(--glass-border);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            gap: 50px;
+            margin-bottom: 60px;
+        }
+
+        /* GAMBAR FOOTER */
+        .footer-img {
+            width: 100%;
+            max-width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 2px;
+            filter: grayscale(1) contrast(1.2);
+            transition: 0.5s;
+            border: 1px solid var(--glass-border);
+        }
+
+        .footer-img:hover {
+            filter: grayscale(0);
+            border-color: var(--accent-emerald);
+        }
+
+        .footer-head {
+            font-family: 'Syne', sans-serif;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .copyright {
+            padding-top: 40px;
+            border-top: 1px solid var(--glass-border);
+            text-align: center;
+            font-size: 0.7rem;
+            color: #444;
+            letter-spacing: 1px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .footer-grid { grid-template-columns: 1fr; text-align: center; }
+            .footer-img { margin: 0 auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="https://vispy.gleeze.com" class="logo">
+            <span class="logo-text">VISPY</span><span class="logo-dot">.</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#">Showcase</a></li>
+            <li><a href="#">The Studio</a></li>
+            <li><a href="#">Journal</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-tag">Excellence in Motion</div>
+        <h1>Defining<br>Visual Identity.</h1>
+        <p>Studio butik yang mengkhususkan diri dalam pengembangan identitas visual mewah untuk era digital masa depan.</p>
+        <a href="#" class="btn-luxe">Start a Project</a>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <img src="vispy-visual.jpg" alt="Vispy Premium Visuals" class="footer-img">
+            </div>
+            <div>
+                <div class="footer-head">Inquiries</div>
+                <p style="color: #666; font-size: 0.9rem;">studio@vispy.gleeze.com</p>
+                <p style="color: #666; font-size: 0.9rem; margin-top: 10px;">+1 (800) VISPY-HQ</p>
+            </div>
+            <div>
+                <div class="footer-head">Social</div>
+                <ul style="list-style: none; color: #666; font-size: 0.9rem;">
+                    <li>Behance</li>
+                    <li>Instagram</li>
+                    <li>LinkedIn</li>
+                </ul>
+            </div>
+        </div>
+      <div style="display: none;">
+     <a href="https://www.shortlyai.com/privacy/">Bosmujur</a>
+</div>
+        <div class="copyright">
+            &copy; 2026 VISPY DIGITAL. ALL RIGHTS RESERVED. | <a href="https://vispy.gleeze.com" style="color: #666; text-decoration: none;">VISPY.GLEEZE.COM</a>
+        </div>
+    </footer>
+
+</body>
+</html>
